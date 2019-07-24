@@ -54,7 +54,7 @@ footer{
   width: 40vw;
   height: 20vw;
   background: red;
-  transform: rotate(120deg);
+  transform: rotate(30deg);
   overflow: hidden;
   visibility: hidden;
   .hexInside{
@@ -76,5 +76,22 @@ footer{
     background-position: center;
     background-size:57% auto;
     background-repeat: no-repeat;
+  }
+}
+.mySkills{
+
+  .container{
+    overflow: hidden;
+      display: grid;
+    grid-template-columns: 17.5vw 17.5vw 17.5vw 17.5vw;
+    grid-template-rows: auto auto auto;
+  }
+  .hexagon {
+    width: 30vw;
+    height: 15vw;
+    .hexImage{
+      background-image: url("https://ichef.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg");
+      background-size: cover;
+    }
   }
 }
