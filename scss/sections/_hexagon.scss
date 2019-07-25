@@ -42,6 +42,20 @@
     margin: -0.7vw;
     width: 26vw;
     height: 13vw;
+    transition: 2s;
+    z-index: 1;
+    &:hover{
+      transform: rotateY(-180deg) rotate(30deg) scale(2);
+      z-index: 2;
+      .hexImage{
+      background-image: none;
+        background-color: white;
+      }
+      .text{
+        opacity: 1;
+      }
+    }
+
     &:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8){
       margin-left:6vw;
     }
