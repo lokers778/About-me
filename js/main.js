@@ -43,21 +43,32 @@ document.addEventListener("DOMContentLoaded",function () {
             link:" https://github.com/lokers778",
         },
     ];
-for(let i=0;i<projectData.length;i++){
-    console.log(projectData[i])
-   let singleProject= document.createElement("div");
-    let image =document.createElement("img");
-    let description=document.createElement("text")
-    let link=document.createElement("a");
-    let otherProjects = document.querySelector('.myProjects .container');
-    otherProjects.appendChild(singleProject);
-    singleProject.appendChild(link);
-    link.appendChild(image);
-    singleProject.appendChild(description);
-    image.setAttribute("src", projectData[i].imgUrl)
-    link.setAttribute("href", projectData[i].link)
-}
 
-console.log(projectData)
+    const printOtherProjects=()=> {
+        for (let i = 0; i < projectData.length; i++) {
+            console.log(projectData[i])
+            let singleProject = document.createElement("div");
+
+            let image = document.createElement("img");
+            let description = document.createElement("p");
+            let descriptionQuote = document.createElement("span");
+            let link = document.createElement("a");
+            let otherProjects = document.querySelector('.myProjects .container');
+            let singleProjectText = document.createElement("div");
+            otherProjects.appendChild(singleProject);
+            singleProject.appendChild(link);
+            link.appendChild(image);
+            singleProject.appendChild(singleProjectText)
+            singleProjectText.appendChild(description);
+            singleProjectText.appendChild(descriptionQuote);
+            image.setAttribute("src", projectData[i].imgUrl);
+            image.setAttribute("alt",projectData[i].title);
+            link.setAttribute("href", projectData[i].link);
+            link.setAttribute("target", "_blank");
+            description.innerText = projectData[i].text;
+            descriptionQuote.innerText = projectData[i].quote;
+        }
+    }
+printOtherProjects()
 
 });
