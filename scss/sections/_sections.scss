@@ -1,0 +1,33 @@
+header{
+  min-height: 100vh;
+
+}
+section{
+  position:relative;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+section:nth-of-type(2){
+  background-color: black;
+  background-image: url("../img/purpulespace.jpg");
+  min-height: 25vh;
+}
+section:nth-of-type(4){
+  background-color: black;
+  background-image: url("../img/space2purpule.jpg");
+  min-height: 25vh;
+}
+section:nth-of-type(1),section:nth-of-type(3),section:nth-of-type(5){
+  background-color: #430064;
+}
+footer{
+
+  min-height: 100vh;
+}
+@media (max-width: 600px) {
+  section{
+    background-attachment: scroll;
+  }
+}

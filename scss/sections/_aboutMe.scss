@@ -1,0 +1,33 @@
+.aboutMe {
+  .container {
+    overflow: hidden;
+  }
+}
+.info{
+  position: relative;
+  height: 24.4vw;
+  left: 12vw;
+  background-color: red;
+  top: 2.5vw;
+  border-radius: 1px;
+  margin-bottom: 4.5vw;
+  margin-right: 20%;
+  padding: 0 12vw;
+  p{
+    text-align: center;
+  }
+}
+.aboutHex{
+  position: absolute;
+  top:4vw;
+  left: 0vw;
+  width: 43vw;
+  height: 21.5vw;
+  z-index: 1;
+
+}
+.hexImage{
+  &:hover ~ .info{
+transform: scale(2);
+  }
+}

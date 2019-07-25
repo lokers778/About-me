@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  width: 100%;
+}
+body{
+  background-color: black;
+  background-image: url("../img/Purple-planet.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+  height: 100%;
+
+}
+
