@@ -93,12 +93,25 @@ document.addEventListener("DOMContentLoaded",function () {
         for(let i=0;i<buttonTabs.length;i++){
             buttonTabs[i].addEventListener("click",()=>{
                 let description =document.querySelector("body > section.aboutMe > div > div.info > p")
-                description.innerText=myDescription[i]
                 description.classList.add("animated")
-            })
+                for(let i=0;i<buttonTabs.length;i++){
+                    buttonTabs[i].setAttribute("disabled","true");
+                }
+                setTimeout(()=>{description.innerText=myDescription[i]
+                    description.classList.remove("animated")
+                    description.classList.add("animatedOut")
+                   ; }, 2000);
+            setTimeout(()=>{description.innerText=myDescription[i]
+                description.classList.remove("animatedOut")
+                for(let i=0;i<buttonTabs.length;i++){
+                    buttonTabs[i].removeAttribute("disabled");
+                }
+                ; }, 4000);
+        })
         }
-        buttonTabs[0].click()
+
     }
+
     printOtherProjects();
     changeDescriptionTab();
 

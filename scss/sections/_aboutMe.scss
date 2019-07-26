@@ -40,11 +40,18 @@ transform: scale(2);
   }
 }
 .animated {
-  animation: moveText linear 3s ;
-
+  animation: moveText linear 2s ;
+}
+.animatedOut{
+  animation: moveTextOut linear 2s;
 }
 @keyframes moveText {
   0%{left:0}
 100%{left:50vw}
+
+}
+@keyframes moveTextOut {
+  0%{left:50vw}
+  100%{left:0vw}
 
 }
