@@ -5,7 +5,7 @@
       height: 25vw;
       display: flex;
       margin:0 0 10vh 0;
-      border: 20px black solid;
+      border: 0.1vw $borderColorOnOtherProjects dashed;
       img{
         width: 100%;
         height: 100%;
@@ -21,9 +21,14 @@
       }
       span{
         text-align: center;
+        font-style: italic;
+        padding: 0.2vw;
+        font-size: 1.7vw;
       }
       p{
         text-align: center;
+        padding: 0.2vw;
+        font-size: 1.7vw;
       }
     }
   }
