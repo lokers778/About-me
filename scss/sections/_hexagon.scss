@@ -30,40 +30,46 @@
 //small grid hex
 
 
-.mySkills{
+.mySkills {
   padding: 6vw;
-  .grid{
+
+  .grid {
     display: grid;
     grid-template-columns: 13.5vw 13.5vw 13.5vw 13.5vw;
     grid-template-rows: auto auto auto;
 
   }
+
   .hexagon {
-    border: 1px solid grey;
     margin: -0.7vw;
     width: 26vw;
     height: 13vw;
-    transition: 2s;
+    transition: 2s all ;
     z-index: 1;
-    &:hover{
-      transform: rotateY(-180deg) rotate(30deg) scale(1.3);
+
+    &:hover {
+      transform: rotateY(-180deg) rotate(30deg) scale(1.1);
       z-index: 2;
       .hexImage{
-      background-image: none;
-        background-color: white;
-      }
-      .text{
-        opacity: 1;
+        background-color: $hexagonColor !important;
+        transition: 2s all ;
       }
     }
 
-    &:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8){
-      margin-left:6vw;
+    &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8) {
+      margin-left: 6vw;
     }
-    .hexImage{
-      background-color: whitesmoke;
-      background-image: url(".././img/icons/html.png");
-      background-size: 30% auto;
+
+
+
     }
+  }
+$url: ".././img/icons/1.png", ".././img/icons/2.png", ".././img/icons/3.png", ".././img/icons/4.png", ".././img/icons/5.png", ".././img/icons/6.png", ".././img/icons/7.png", ".././img/icons/8.png", ".././img/icons/9.png", ".././img/icons/10.png", ".././img/icons/11.png", ".././img/icons/12 .png";
+@for $i from 1 through 12 {
+  section.mySkills > div > div > .hexagon:nth-child(#{$i}) > div > .hexImage{
+    background-image: url(nth($url, $i));
+    background-color: whitesmoke;
+    background-size: 30% auto;
+    transition: 2s;
   }
 }

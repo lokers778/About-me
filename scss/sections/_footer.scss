@@ -1,0 +1,24 @@
+footer {
+  .container {
+    height: 100vh;
+    display: flex;
+    padding: 5vw 2vw;
+
+    form {
+      background-color: $sectionsBackgroundColor;
+      padding: 20px;
+    }
+
+    div:nth-child(2) {
+      background-color: $sectionsBackgroundColor;
+      text-align: center;
+      li {
+        list-style: none;
+      }
+      a{
+        text-decoration: none;
+        color:darkcyan;
+      }
+    }
+  }
+}
