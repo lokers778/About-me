@@ -13,26 +13,41 @@ footer {
     padding: 5vw 2vw;
 
     form {
-      background-color: $sectionsBackgroundColor;
       padding: 20px;
       height: 80vh;
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
+      border-top-left-radius:3vw ;
+      border-bottom-left-radius:3vw ;
+      font-family: 'Shadows Into Light', cursive;
+      background-color: $sectionsBackgroundColor;
+      input{
+        height: 3vw;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 1.8vw;
+      }
+      textarea{
+        height:15vw;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 1.8vw;
+      }
     }
 
     button {
       align-self: center;
       height: 10%;
       background-color: $buttonColor;
-      color: $smallerTextColor;
+      color: $buttonTextColor;
       outline: 0;
       border: 0.5px solid $borderColorOnOtherProjects;
       transition: 2s all;
+      font-size: 1.8vw;
       width: 30%;
       box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.51);
       position: relative;
       border-radius: 10px;
+      font-family: 'Shadows Into Light', cursive;
       &:hover {
        transform: scale(0.9);
         cursor: pointer;
@@ -48,7 +63,8 @@ footer {
       flex-direction: column;
       justify-content: center;
       height: 80vh;
-
+      border-bottom-right-radius:3vw ;
+      border-top-right-radius:3vw ;
       h2 {
         font-size: 4vw;
       }
@@ -62,6 +78,13 @@ footer {
         text-decoration: none;
         color: white;
         font-size: 2.8vw;
+        transition: all 1s;
+        &:hover{
+          color:$buttonColor;
+        }
+        &:active{
+          color:$buttonOnHover;
+        }
       }
     }
   }
