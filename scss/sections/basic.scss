@@ -3,6 +3,10 @@
   margin:0;
   padding: 0;
   width: 100%;
+
+}
+body{
+  color:white;
 }
 .container{
   max-width: 80%;
@@ -14,9 +18,34 @@ h1{
   font-size: 9vw;
   margin: 0 auto;
   text-align: center;
+  transition: all 0.5s;
+
+  &:hover{
+    animation: neon 1.5s ease-in-out infinite alternate;
+    cursor:pointer;
+  }
 }
 h2{
   color:$smallerTextColor;
   text-align: center;
   font-size: 7vw;
+  &:hover{
+    animation: neon 1.5s ease-in-out infinite alternate;
+  }
+}
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(255, 218, 26), 0 0 70px rgb(255, 218, 26), 0 0 80px rgb(255, 218, 26), 0 0 100px rgb(255, 218, 26), 0 0 150px rgb(255, 218, 26);
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(255, 218, 26), 0 0 35px rgb(255, 218, 26), 0 0 40px rgb(255, 218, 26), 0 0 50px rgb(255, 218, 26), 0 0 75px rgb(255, 218, 26);
+  }
+}
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px orange, 0 0 70px orange, 0 0 80px orange, 0 0 100px orange, 0 0 150px orange;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px orange, 0 0 35px orange, 0 0 40px orange, 0 0 50px orange, 0 0 75px orange;
+  }
 }

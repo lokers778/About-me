@@ -1,6 +1,6 @@
 header{
   background-color: $sectionsBackgroundColor;
-  background-image: url("../img/laptop.jpg");
+  background-image: url("../img/Code.jpg");
   min-height: 100vh;
   background-position: center;
   background-size:100% 100%;
@@ -19,8 +19,9 @@ section{
 }
 section:nth-of-type(2){
   background-color: $sectionsBackgroundColor;
-  background-image: url("../img/code.jpg");
+  background-image: url("../img/matrix.jpeg");
   min-height: 25vh;
+  opacity: 0.8;
   .container{
     display: flex;
     justify-content: center;
@@ -30,8 +31,9 @@ section:nth-of-type(2){
 }
 section:nth-of-type(4){
   background-color: $sectionsBackgroundColor;
-  background-image: url("../img/board.jpg");
+  background-image: url("../img/cyber.jpg");
   min-height: 25vh;
+  opacity: 0.8;
   .container{
     display: flex;
     justify-content: center;
