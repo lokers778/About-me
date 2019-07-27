@@ -7,6 +7,8 @@
 }
 body{
   color:white;
+  font-family: 'Hanalei', cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 .container{
   max-width: 80%;
@@ -19,7 +21,7 @@ h1{
   margin: 0 auto;
   text-align: center;
   transition: all 0.5s;
-
+  font-family: 'Hanalei', cursive;
   &:hover{
     animation: neon 1.5s ease-in-out infinite alternate;
     cursor:pointer;
@@ -29,6 +31,7 @@ h2{
   color:$smallerTextColor;
   text-align: center;
   font-size: 7vw;
+  font-family: 'Hanalei', cursive;
   &:hover{
     animation: neon 1.5s ease-in-out infinite alternate;
   }
