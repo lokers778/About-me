@@ -51,7 +51,6 @@
       transform: rotateY(-180deg) rotate(30deg) scale(1.1);
       z-index: 2;
       .hexImage{
-        background-color: $hexagonColor !important;
         transition: 2s all ;
       }
     }

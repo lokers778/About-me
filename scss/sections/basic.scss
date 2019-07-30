@@ -13,6 +13,7 @@ body{
   max-width: 80%;
   margin: 0 auto;
   height: 100%;
+  text-align: center;
 }
 h1{
   color:$headerColor;
@@ -21,33 +22,75 @@ h1{
   text-align: center;
   transition: all 0.5s;
   font-family: 'Hanalei', cursive;
-  &:hover{
-    animation: neon 1.5s ease-in-out infinite alternate;
-    cursor:pointer;
-  }
+  display: inline;
+    animation: neon 1.5s linear infinite alternate;
+
 }
 h2{
   color:$smallerTextColor;
   text-align: center;
   font-size: 7vw;
   font-family: 'Hanalei', cursive;
-  &:hover{
-    animation: neon 1.5s ease-in-out infinite alternate;
-  }
+  display: inline;
+  &:hover {
+  animation: neon 1.5s linear infinite alternate;
+}
 }
 @keyframes neon {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(255, 218, 26), 0 0 70px rgb(255, 218, 26), 0 0 80px rgb(255, 218, 26), 0 0 100px rgb(255, 218, 26), 0 0 150px rgb(255, 218, 26);
+  0% {
+    text-shadow: none
   }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(255, 218, 26), 0 0 35px rgb(255, 218, 26), 0 0 40px rgb(255, 218, 26), 0 0 50px rgb(255, 218, 26), 0 0 75px rgb(255, 218, 26);
+  10%{
+    text-shadow: 0 0 5px #fff;
+  }
+  20% {
+    text-shadow:  0 0 10px #fff;
+  }
+  30%{
+    text-shadow:0 0 15px #fff ;
+  }
+  40%{
+    text-shadow: 0 0 20px rgb(255, 218, 26);
+  }
+  50%{
+    text-shadow: 0 0 35px rgb(255, 218, 26) ;
+  }
+60%{
+  text-shadow: 0 0 40px rgb(255, 218, 26);
+}
+  70%{
+    text-shadow: 0 0 50px rgb(255, 218, 26);
+  }
+  100%{
+    text-shadow:0 0 75px rgb(255, 218, 26); ;
   }
 }
 @keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px orange, 0 0 70px orange, 0 0 80px orange, 0 0 100px orange, 0 0 150px orange;
+  0% {
+    text-shadow: none
   }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px orange, 0 0 35px orange, 0 0 40px orange, 0 0 50px orange, 0 0 75px orange;
+  10%{
+    text-shadow: 0 0 5px #fff;
+  }
+  20% {
+    text-shadow:  0 0 10px #fff;
+  }
+  30%{
+    text-shadow:0 0 15px #fff ;
+  }
+  40%{
+    text-shadow: 0 0 20px orange;
+  }
+  50%{
+    text-shadow: 0 0 35px orange ;
+  }
+  60%{
+    text-shadow: 0 0 40px orange;
+  }
+  70%{
+    text-shadow: 0 0 50px orange;
+  }
+  100%{
+    text-shadow:0 0 75px orange; ;
   }
 }
