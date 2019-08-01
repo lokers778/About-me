@@ -8,9 +8,26 @@
       border: 0.2vw $borderColorOnOtherProjects dashed;
       overflow: hidden;
       border-radius: 33px;
+      @media (max-width: 800px) {
+        flex-direction: column;
+       // height: 83.6vw;
+         height: 53.6vw;
+        transition: 2s all;
+        &:hover{
+          height: 83.6vw;
+          p{
+            top:0;
+            display: block;
+          }
+        }
+      }
       img{
         width: 100%;
         height: 100%;
+        @media (max-width: 800px) {
+         z-index: 2;
+          position: relative;
+        }
       }
      > div{
         height: 100%;
@@ -20,19 +37,31 @@
        align-items: center;
        justify-content: space-between;
        padding: 2% 0;
+       @media (max-width: 800px) {
+         position: relative;
+       }
       }
       span{
         text-align: center;
         font-style: italic;
         padding: 0.2vw;
         font-size: 1.7vw;
+        @media (max-width: 800px) {
+          font-size: 2.7vw;
+        }
       }
       p{
         text-align: center;
         padding: 0.2vw;
         font-size: 1.7vw;
+        @media (max-width: 800px) {
+          font-size:3vw;
+          top:-50%;
+display: none;
+        }
       }
     }
   }
 
 }
+
