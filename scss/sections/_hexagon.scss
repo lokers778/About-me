@@ -24,6 +24,7 @@
     background-size: 57% auto;
     background-repeat: no-repeat;
     position: relative;
+
   }
 }
 
@@ -81,20 +82,19 @@
     }
     @media (max-width: 490px) {
 
-      &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(12), &:nth-of-type(10), &:nth-of-type(11) {
+      &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(12), &:nth-of-type(10), &:nth-of-type(11), &:nth-of-type(7),  &:nth-of-type(8) {
         margin-left: -0.7vw*2.4;
       }
       &:nth-of-type(3), &:nth-of-type(6),&:nth-of-type(9),&:nth-of-type(12){
         grid-column: span 2;
-        margin-left: 6vw*2.4;
+        margin-left: 6vw*2.4 +0.1;
       }
       width: 26*2.4vw;
       height: 13*2.4vw;
-      margin: -0.7vw *2.4;
+      margin: -0.7vw *2.4 ;
     }
   }
 }
-
 $url: ".././img/icons/1.png", ".././img/icons/2.png", ".././img/icons/3.png", ".././img/icons/4.png", ".././img/icons/5.png", ".././img/icons/6.png", ".././img/icons/7.png", ".././img/icons/8.png", ".././img/icons/9.png", ".././img/icons/10.png", ".././img/icons/11.png", ".././img/icons/12 .png";
 @for $i from 1 through 12 {
   section.mySkills > div > div > .hexagon:nth-child(#{$i}) > div > .hexImage {
