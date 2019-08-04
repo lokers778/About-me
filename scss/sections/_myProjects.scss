@@ -1,5 +1,13 @@
 .myProjects{
   padding-top:10vh;
+  .container{
+    @media (max-width: 490px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1vw;
+      grid-template-rows: 22vw 22vw;
+    }
+  }
   >div{
     >div{
       height: 25vw;
@@ -10,8 +18,8 @@
       border-radius: 33px;
       @media (max-width: 800px) {
         flex-direction: column;
-       // height: 83.6vw;
-         height: 53.6vw;
+        // height: 83.6vw;
+        height: 53.6vw;
         transition: 2s all;
         &:hover{
           height: 83.6vw;
@@ -21,25 +29,40 @@
           }
         }
       }
+      @media (max-width: 490px) {
+        height: 22vw;
+        &:hover {
+          transition: 2s all;
+          height: 22vw;
+          border: $borderColorOnOtherProjects solid 2px;
+          img{
+            filter: grayscale(100%);
+          }
+
+        }
+      }
       img{
         width: 100%;
         height: 100%;
         @media (max-width: 800px) {
-         z-index: 2;
+          z-index: 2;
           position: relative;
         }
       }
-     > div{
+      > div{
         height: 100%;
         flex-direction: column;
         background-color: $aboutMeColor;
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       padding: 2% 0;
-       @media (max-width: 800px) {
-         position: relative;
-       }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 0;
+        @media (max-width: 800px) {
+          position: relative;
+        }
+        @media (max-width: 490px) {
+          display: none;
+        }
       }
       span{
         text-align: center;
@@ -57,7 +80,7 @@
         @media (max-width: 800px) {
           font-size:3vw;
           top:-50%;
-display: none;
+          display: none;
         }
       }
     }
