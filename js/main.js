@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded",function () {
     }
 
     const changeDescriptionTab=()=>{
-      let  buttonTabs = document.querySelectorAll("button")
+      let  buttonTabs = document.querySelectorAll("div.info div button")
         for(let i=0;i<buttonTabs.length;i++){
             buttonTabs[i].addEventListener("click",()=>{
                 let description =document.querySelector("body > section.aboutMe > div > div.info > p")
