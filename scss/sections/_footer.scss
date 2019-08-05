@@ -24,7 +24,7 @@ footer {
 
     form {
       padding: 20px;
-      height: 80vw;
+      min-height: 60vw;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -70,7 +70,7 @@ footer {
       }
     }
 
-    button {
+    button[type="submit"] {
       align-self: center;
       height: 10%;
       background-color: $buttonColor;
@@ -105,7 +105,7 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 80vw;
+     min-height: 60vw;
       border-bottom-right-radius: 3vw;
       border-top-right-radius: 3vw;
       @media (max-width: 490px) {
