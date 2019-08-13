@@ -44,6 +44,14 @@ document.addEventListener("DOMContentLoaded",function () {
         },
         {
             id: "6",
+            imgUrl: "img/Projects/GridGallery.png",
+            title: "GridGallery",
+            text: "RWD Grid gallery - getting images from Api, filter functions, show full images, loading images view",
+            quote:"Looks amazing.. also working",
+            link:" https://lokers778.github.io/Grid_gallery/",
+        },
+        {
+            id: "7",
             imgUrl: "img/Projects/programing duck.jpeg",
             title: "Work in progress",
             text: "Other projects will be here soon....",
