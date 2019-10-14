@@ -52,6 +52,22 @@ document.addEventListener("DOMContentLoaded",function () {
         },
         {
             id: "7",
+            imgUrl: "img/Projects/pong.png",
+            title: "BreakOutGame",
+            text: "Made with vanilla js and Canvas simple breakoutGame, 4 level still contains some bugs",
+            quote:"..sooo am I a game developer now ?",
+            link:" https://lokers778.github.io/BreakOutGame/",
+        },
+        {
+            id: "8",
+            imgUrl: "img/Projects/Game_of_life.png",
+            title: "Game Of Life",
+            text: "My attempt to create Game of Life in vanilla JS, OPP. 0 player game, OPP ",
+            quote:"..like in real life not all working the way it should",
+            link:"https://lokers778.github.io/GameOfLife/",
+        },
+        {
+            id: "8",
             imgUrl: "img/Projects/programing duck.jpeg",
             title: "Work in progress",
             text: "Other projects will be here soon....",
@@ -59,6 +75,7 @@ document.addEventListener("DOMContentLoaded",function () {
             link:" https://github.com/lokers778",
         },
     ];
+
 
     const myDescription=[
         "I started learning programing in summer,2018. I'd was playing with unity and unreal with blueprints then i realize that i dont understand what i doing just watching courses and expecting this will work. I started learning from html, css and i loved it (latter come JS and almost kill that love but this is another story). Coding website, creating layout made me feel from the first time for a long time that this is what i want to do in my future , i am able to give my time and sleep for this. So for a long time i was going to college and learning on almost every evening. When i decide this is not enough and sometimes its harder than it should because i dont have time i started thinking about bootcamp.. and there i am",
