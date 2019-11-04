@@ -1,11 +1,12 @@
 .myProjects{
-  padding-top:10vh;
+  padding:10vh 0;
   .container{
     @media (max-width: 490px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 1vw;
       grid-template-rows: 22vw 22vw;
+      grid-auto-rows: 22vw;
     }
   }
   >div{
