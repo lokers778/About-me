@@ -68,12 +68,21 @@ document.addEventListener("DOMContentLoaded",function () {
         },
         {
             id: "9",
+            imgUrl: "img/Projects/ModernLibray.png",
+            title: "Modern Libray",
+            text: "Project made with React, webpack, sass - fetching data from google books api and sorting them by title, author, subject etc.",
+            quote:"..i will not say that this is better than normal books but..kinda it is ",
+            link:"https://lokers778.github.io/ModernLibray/",
+        },
+        {
+            id: "10",
             imgUrl: "img/Projects/programing duck.jpeg",
             title: "Work in progress",
             text: "Other projects will be here soon....",
             quote:"..Sooner than latter",
             link:" https://github.com/lokers778",
         },
+
     ];
 
 

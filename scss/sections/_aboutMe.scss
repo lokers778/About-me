@@ -1,5 +1,8 @@
 .aboutMe{
   min-height: 30vw;
+  @media screen and (max-width: 490px) {
+    height: 42vw;
+  }
 }
 .info {
   position: relative;
@@ -21,6 +24,7 @@
   @media screen and (max-width: 490px) {
    padding: 0;
     left: 0;
+    height: 36.4vw;
   }
   .buttonTabs {
     z-index: 1;
@@ -129,7 +133,7 @@ display: flex;
     }
     @media screen and (max-width: 490px) {
       padding: 1vw 1vw;
-      height: 19vw;
+      height: 30vw;
       font-size:4vw;
       text-align: center;
 
