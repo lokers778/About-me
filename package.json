@@ -19,14 +19,14 @@
         "sass": "^1.21.0"
     },
     "dependencies": {
-        "autoprefixer": "^9.6.0",
+        "autoprefixer": "^10.4.19",
         "browser-sync": "^2.26.7",
-        "cssnano": "^4.1.10",
+        "cssnano": "^7.0.1",
         "del": "^4.1.1",
         "gulp-eslint": "^5.0.0",
         "gulp-imagemin": "^6.0.0",
         "gulp-newer": "^1.4.0",
-        "gulp-postcss": "^8.0.0",
+        "gulp-postcss": "^10.0.0",
         "webpack": "^4.33.0"
     }
 }
